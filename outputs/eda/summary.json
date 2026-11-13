@@ -1,0 +1,454 @@
+{
+  "dataset": "ag_news",
+  "train_rows": 8000,
+  "test_rows": 2000,
+  "test_used_in_eda": false,
+  "classes": {
+    "World": 2000,
+    "Sports": 2000,
+    "Business": 2000,
+    "Sci_Tech": 2000
+  },
+  "html_docs_in_train": 359,
+  "url_docs_in_train": 136,
+  "empty_after_preprocess": 0,
+  "length": {
+    "min": 7,
+    "median": 36.0,
+    "mean": 36.706375,
+    "p95": 51.0,
+    "max": 142,
+    "recommended_max_len": 51
+  },
+  "stop_words_in_top_50": 37,
+  "top_50": [
+    {
+      "word": "the",
+      "count": 13698,
+      "is_stop": true
+    },
+    {
+      "word": "to",
+      "count": 7972,
+      "is_stop": true
+    },
+    {
+      "word": "of",
+      "count": 6578,
+      "is_stop": true
+    },
+    {
+      "word": "in",
+      "count": 6365,
+      "is_stop": true
+    },
+    {
+      "word": "be",
+      "count": 4653,
+      "is_stop": true
+    },
+    {
+      "word": "and",
+      "count": 4637,
+      "is_stop": true
+    },
+    {
+      "word": "on",
+      "count": 3774,
+      "is_stop": true
+    },
+    {
+      "word": "for",
+      "count": 3410,
+      "is_stop": true
+    },
+    {
+      "word": "have",
+      "count": 2419,
+      "is_stop": true
+    },
+    {
+      "word": "say",
+      "count": 1976,
+      "is_stop": true
+    },
+    {
+      "word": "that",
+      "count": 1932,
+      "is_stop": true
+    },
+    {
+      "word": "with",
+      "count": 1771,
+      "is_stop": true
+    },
+    {
+      "word": "as",
+      "count": 1719,
+      "is_stop": true
+    },
+    {
+      "word": "at",
+      "count": 1669,
+      "is_stop": true
+    },
+    {
+      "word": "its",
+      "count": 1501,
+      "is_stop": true
+    },
+    {
+      "word": "it",
+      "count": 1437,
+      "is_stop": true
+    },
+    {
+      "word": "new",
+      "count": 1433,
+      "is_stop": false
+    },
+    {
+      "word": "by",
+      "count": 1357,
+      "is_stop": true
+    },
+    {
+      "word": "from",
+      "count": 1221,
+      "is_stop": true
+    },
+    {
+      "word": "an",
+      "count": 1194,
+      "is_stop": true
+    },
+    {
+      "word": "will",
+      "count": 1004,
+      "is_stop": true
+    },
+    {
+      "word": "year",
+      "count": 969,
+      "is_stop": false
+    },
+    {
+      "word": "after",
+      "count": 947,
+      "is_stop": true
+    },
+    {
+      "word": "his",
+      "count": 940,
+      "is_stop": true
+    },
+    {
+      "word": "over",
+      "count": 803,
+      "is_stop": true
+    },
+    {
+      "word": "their",
+      "count": 733,
+      "is_stop": true
+    },
+    {
+      "word": "up",
+      "count": 730,
+      "is_stop": true
+    },
+    {
+      "word": "he",
+      "count": 727,
+      "is_stop": true
+    },
+    {
+      "word": "two",
+      "count": 675,
+      "is_stop": true
+    },
+    {
+      "word": "first",
+      "count": 673,
+      "is_stop": true
+    },
+    {
+      "word": "company",
+      "count": 651,
+      "is_stop": false
+    },
+    {
+      "word": "win",
+      "count": 622,
+      "is_stop": false
+    },
+    {
+      "word": "world",
+      "count": 609,
+      "is_stop": false
+    },
+    {
+      "word": "but",
+      "count": 598,
+      "is_stop": true
+    },
+    {
+      "word": "one",
+      "count": 582,
+      "is_stop": true
+    },
+    {
+      "word": "more",
+      "count": 578,
+      "is_stop": true
+    },
+    {
+      "word": "they",
+      "count": 577,
+      "is_stop": true
+    },
+    {
+      "word": "game",
+      "count": 554,
+      "is_stop": false
+    },
+    {
+      "word": "us",
+      "count": 551,
+      "is_stop": true
+    },
+    {
+      "word": "report",
+      "count": 551,
+      "is_stop": false
+    },
+    {
+      "word": "out",
+      "count": 545,
+      "is_stop": true
+    },
+    {
+      "word": "this",
+      "count": 543,
+      "is_stop": true
+    },
+    {
+      "word": "not",
+      "count": 531,
+      "is_stop": true
+    },
+    {
+      "word": "oil",
+      "count": 519,
+      "is_stop": false
+    },
+    {
+      "word": "monday",
+      "count": 518,
+      "is_stop": false
+    },
+    {
+      "word": "wednesday",
+      "count": 505,
+      "is_stop": false
+    },
+    {
+      "word": "thursday",
+      "count": 502,
+      "is_stop": false
+    },
+    {
+      "word": "tuesday",
+      "count": 495,
+      "is_stop": false
+    },
+    {
+      "word": "make",
+      "count": 483,
+      "is_stop": true
+    },
+    {
+      "word": "friday",
+      "count": 480,
+      "is_stop": false
+    }
+  ],
+  "bigrams": [
+    {
+      "ngram": "new york",
+      "count": 419
+    },
+    {
+      "ngram": "oil price",
+      "count": 197
+    },
+    {
+      "ngram": "united states",
+      "count": 167
+    },
+    {
+      "ngram": "prime minister",
+      "count": 139
+    },
+    {
+      "ngram": "red sox",
+      "count": 98
+    },
+    {
+      "ngram": "los angeles",
+      "count": 96
+    },
+    {
+      "ngram": "san francisco",
+      "count": 96
+    },
+    {
+      "ngram": "president bush",
+      "count": 93
+    },
+    {
+      "ngram": "year old",
+      "count": 88
+    },
+    {
+      "ngram": "mobile phone",
+      "count": 72
+    },
+    {
+      "ngram": "wall street",
+      "count": 71
+    },
+    {
+      "ngram": "microsoft corp",
+      "count": 70
+    },
+    {
+      "ngram": "world cup",
+      "count": 69
+    },
+    {
+      "ngram": "chief executive",
+      "count": 67
+    },
+    {
+      "ngram": "kill people",
+      "count": 67
+    },
+    {
+      "ngram": "european union",
+      "count": 65
+    },
+    {
+      "ngram": "year ago",
+      "count": 63
+    },
+    {
+      "ngram": "world large",
+      "count": 60
+    },
+    {
+      "ngram": "crude oil",
+      "count": 59
+    },
+    {
+      "ngram": "open source",
+      "count": 59
+    }
+  ],
+  "trigrams": [
+    {
+      "ngram": "new york stock",
+      "count": 37
+    },
+    {
+      "ngram": "boston red sox",
+      "count": 37
+    },
+    {
+      "ngram": "high oil price",
+      "count": 27
+    },
+    {
+      "ngram": "prime minister ariel",
+      "count": 26
+    },
+    {
+      "ngram": "minister ariel sharon",
+      "count": 25
+    },
+    {
+      "ngram": "secretary state colin",
+      "count": 22
+    },
+    {
+      "ngram": "state colin powell",
+      "count": 22
+    },
+    {
+      "ngram": "president george bush",
+      "count": 21
+    },
+    {
+      "ngram": "new york yankees",
+      "count": 21
+    },
+    {
+      "ngram": "president vladimir putin",
+      "count": 21
+    },
+    {
+      "ngram": "security exchange commission",
+      "count": 20
+    },
+    {
+      "ngram": "crude oil price",
+      "count": 20
+    },
+    {
+      "ngram": "international space station",
+      "count": 18
+    },
+    {
+      "ngram": "minister tony blair",
+      "count": 17
+    },
+    {
+      "ngram": "prime minister tony",
+      "count": 17
+    },
+    {
+      "ngram": "initial public offering",
+      "count": 16
+    },
+    {
+      "ngram": "st louis cardinal",
+      "count": 16
+    },
+    {
+      "ngram": "los angeles dodger",
+      "count": 16
+    },
+    {
+      "ngram": "osama bin laden",
+      "count": 15
+    },
+    {
+      "ngram": "wal mart stores",
+      "count": 15
+    }
+  ],
+  "examples": [
+    {
+      "raw": "Sprint, SBC In Hotspot Roaming Deal. Sprint and SBC Communications Friday announced a two-way roaming deal that will enable the customers of each vendor to access the hotspots run by the other.",
+      "processed": "sprint sbc in hotspot roam deal sprint and sbc communication friday announce a two way roam deal that will enable the customer of each vendor to access the hotspot run by the other"
+    },
+    {
+      "raw": "Update 2: Top Citigroup Executives Swap Jobs. In a move Citigroup Inc. said was aimed at broadening the experience of up-and-coming executives, two of its top managers are swapping jobs.",
+      "processed": "update top citigroup executive swap job in a move citigroup inc say be aim at broaden the experience of up and come executive two of its top manager be swap job"
+    },
+    {
+      "raw": "Pepsi Bottling 3rd-Qtr Profit Rises 4.4 on Juices (Update2). Pepsi Bottling Group Inc., the world #39;s largest distributor of PepsiCo Inc. beverages, said third- quarter earnings rose 4.4 percent on new Tropicana juice drinks and sales in Europe.",
+      "processed": "pepsi bottle qtr profit rise on juice update pepsi bottling group inc the world large distributor of pepsico inc beverage say third quarter earning rise percent on new tropicana juice drink and sale in europe"
+    }
+  ]
+}

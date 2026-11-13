@@ -1,0 +1,292 @@
+{
+  "dataset": "ag_news",
+  "model": "LogisticRegression",
+  "solver": "lbfgs",
+  "C": 1.0,
+  "train_rows": 8000,
+  "test_rows": 2000,
+  "stop_words": 330,
+  "vectorizer": {
+    "max_features": 20000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "sublinear_tf": true,
+    "vocabulary_size": 20000
+  },
+  "matrix_shape": {
+    "train": [
+      8000,
+      20000
+    ],
+    "test": [
+      2000,
+      20000
+    ]
+  },
+  "cv_experiments": [
+    {
+      "max_features": 5000,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "f1_macro_mean": 0.8771268109840747,
+      "f1_macro_std": 0.006388834272679306,
+      "folds": [
+        0.8682457599593121,
+        0.8830064350223792,
+        0.880128237970533
+      ]
+    },
+    {
+      "max_features": 10000,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "f1_macro_mean": 0.8788585576663522,
+      "f1_macro_std": 0.006222681059743329,
+      "folds": [
+        0.8700783047120237,
+        0.8837615271023614,
+        0.8827358411846715
+      ]
+    },
+    {
+      "max_features": 10000,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "f1_macro_mean": 0.8789213072402412,
+      "f1_macro_std": 0.007231230411004901,
+      "folds": [
+        0.868718476539029,
+        0.8834204567464188,
+        0.8846249884352757
+      ]
+    },
+    {
+      "max_features": 20000,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "f1_macro_mean": 0.8812807939799945,
+      "f1_macro_std": 0.007067078305895706,
+      "folds": [
+        0.8713069546414359,
+        0.8868220513703049,
+        0.8857133759282428
+      ]
+    }
+  ],
+  "selected_by": "f1_macro medio en StratifiedKFold del train",
+  "test": {
+    "accuracy": 0.889,
+    "f1_macro": 0.8889485202253673,
+    "f1_weighted": 0.8889485202253675,
+    "per_class": {
+      "World": {
+        "precision": 0.9117647058823529,
+        "recall": 0.868,
+        "f1-score": 0.889344262295082,
+        "support": 500.0
+      },
+      "Sports": {
+        "precision": 0.9471624266144814,
+        "recall": 0.968,
+        "f1-score": 0.9574678536102869,
+        "support": 500.0
+      },
+      "Business": {
+        "precision": 0.8333333333333334,
+        "recall": 0.85,
+        "f1-score": 0.8415841584158416,
+        "support": 500.0
+      },
+      "Sci_Tech": {
+        "precision": 0.8648111332007953,
+        "recall": 0.87,
+        "f1-score": 0.8673978065802592,
+        "support": 500.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "World",
+        "Sports",
+        "Business",
+        "Sci_Tech"
+      ],
+      "matrix": [
+        [
+          434,
+          14,
+          33,
+          19
+        ],
+        [
+          4,
+          484,
+          7,
+          5
+        ],
+        [
+          26,
+          5,
+          425,
+          44
+        ],
+        [
+          12,
+          8,
+          45,
+          435
+        ]
+      ]
+    }
+  },
+  "top_coefficients": {
+    "Business": [
+      {
+        "term": "company",
+        "coef": 3.1734231853510764
+      },
+      {
+        "term": "oil",
+        "coef": 2.98344357443558
+      },
+      {
+        "term": "profit",
+        "coef": 2.889022982537779
+      },
+      {
+        "term": "billion",
+        "coef": 2.716258843204555
+      },
+      {
+        "term": "buy",
+        "coef": 2.2978500736107508
+      },
+      {
+        "term": "economy",
+        "coef": 2.27787856200122
+      },
+      {
+        "term": "corp",
+        "coef": 2.2631098513035113
+      },
+      {
+        "term": "share",
+        "coef": 2.241404551254386
+      }
+    ],
+    "Sci_Tech": [
+      {
+        "term": "internet",
+        "coef": 3.5945832339976533
+      },
+      {
+        "term": "space",
+        "coef": 3.3831219592893063
+      },
+      {
+        "term": "microsoft",
+        "coef": 3.295305602767966
+      },
+      {
+        "term": "software",
+        "coef": 3.137475344592398
+      },
+      {
+        "term": "scientist",
+        "coef": 3.0954967650484275
+      },
+      {
+        "term": "computer",
+        "coef": 2.8894380864497604
+      },
+      {
+        "term": "nasa",
+        "coef": 2.692092478882955
+      },
+      {
+        "term": "technology",
+        "coef": 2.616480257040126
+      }
+    ],
+    "Sports": [
+      {
+        "term": "team",
+        "coef": 3.8373125477101677
+      },
+      {
+        "term": "game",
+        "coef": 3.4170361623977397
+      },
+      {
+        "term": "coach",
+        "coef": 3.310667799377773
+      },
+      {
+        "term": "win",
+        "coef": 3.2031813058585787
+      },
+      {
+        "term": "season",
+        "coef": 3.2030366047835104
+      },
+      {
+        "term": "cup",
+        "coef": 3.134009152691141
+      },
+      {
+        "term": "league",
+        "coef": 3.025474160248023
+      },
+      {
+        "term": "player",
+        "coef": 2.919613678099422
+      }
+    ],
+    "World": [
+      {
+        "term": "iraq",
+        "coef": 4.241045207166448
+      },
+      {
+        "term": "president",
+        "coef": 3.5594935664247895
+      },
+      {
+        "term": "kill",
+        "coef": 3.161010128800827
+      },
+      {
+        "term": "leader",
+        "coef": 2.8256594590396134
+      },
+      {
+        "term": "minister",
+        "coef": 2.770228957352738
+      },
+      {
+        "term": "nuclear",
+        "coef": 2.714854064761588
+      },
+      {
+        "term": "election",
+        "coef": 2.572684617764188
+      },
+      {
+        "term": "rebel",
+        "coef": 2.1852117649937575
+      }
+    ]
+  }
+}
